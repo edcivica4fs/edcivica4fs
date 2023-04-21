@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Privacy Online</title>
+		<link rel="icon" href="images/img2.png" type="image/x-icon">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo">Privacy Online</a>
+				</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+                    <ul class="links">
+                        <li  ><a href="index.html">Home</a></li>
+                        <li  ><a href="generic.html">4FS</a></li>
+                        <li><a href="elements.html">Risorse</a></li>
+                    </ul>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/liceomusicale.piedimontematese" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://instagram.com/liceo_galileipiedimontematese?igshid=YmMyMTA2M2Y=" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </nav>
+				<!-- Main -->
+					<div id="main">
+                       
+                            <header>
+                                <h2>procedure di sicurezza</h2>
+                                <p>Durante il setup delle infrastrutture, rendere operative le applicazioni sarà spesso la vostra preoccupazione principale. Tuttavia, rendere le applicazioni correttamente funzionanti senza far fronte alle esigenze di sicurezza della vostra infrastruttura, prima o poi potrebbe avere conseguenze devastanti.
+
+                                    Ecco alcune procedure di sicurezza di base, ottime da mettere in atto prima o durante la configurazione delle applicazioni.
+                                </p>
+                                <ul>
+                                    <li><h3>Chiavi SSH
+                                    </h3></li>
+                                    <p>Le chiavi SSH sono una coppia di chiavi crittografiche che possono essere utilizzate per l’autenticazione ad un server SSH quale alternativa al login basato su password. Prima dell’autenticazione viene creata una coppia di chiavi pubblica e privata. La chiave privata viene tenuta segreta e al sicuro da parte dell’utente, mentre la chiave pubblica può essere condivisa con chiunque. Quando l’utente si connette al server, il server chiederà la conferma che il client ha la chiave privata associata. Il server poi lascia che il client si colleghi senza password.
+                                        <br>Con SSH, qualsiasi tipo di autenticazione, tra cui l’autenticazione della password, è completamente cifrata. Tuttavia, quando sono consentiti gli accessi basati su password, gli utenti malintenzionati possono tentare di accedere più volte al server. Con l’attuale potenza di calcolo è possibile ottenere l’accesso ad un server automatizzando questi tentativi provando, combinazione dopo combinazione, fino a trovare la password giusta. Molti algoritmi SSH a chiave sono considerati inattaccabili dalla potenza di calcolo moderna semplicemente perché richiederebbero troppo tempo per poter esaminare tutte le possibili corrispondenze.                                                                                                                                                     Le chiavi SSH sono molto facili da installare e sono il metodo consigliato per accedere ad un qualsiasi ambiente server Linux o Unix da remoto. 
+                                    </p>
+                                    <li><h3>Firewall </h3></li>
+                                    <p>
+                                        Un firewall è un software (o hardware) che controlla quali servizi sono esposti alla rete. Questo significa bloccare o limitare l’accesso a tutte le porte ad eccezione di quelle che dovrebbero essere pubblicamente disponibili.
+                                        <br>
+                                        <br><br>
+                                        Su un tipico server, di default possono essere in esecuzione un certo numero di servizi.                      
+                                        <ul>
+                                            <li>Servizi pubblici, a cui può accedere chiunque su internet.</li>
+                                            <li> Servizi privati, accessibili solo da un gruppo selezionato di client autorizzati o da determinate aree (un esempio può essere un pannello di controllo del database).   </li>
+
+                                            <li>Servizi interni, che devono essere accessibili solo dall’interno del server stesso.</li>
+                                        </ul>
+                                        <br><br><br>
+                                        <p>
+                                            I firewall possono garantire che l’accesso al software sia limitato secondo le categorie di cui sopra. 
+                                            <br>
+                                            I firewall sono una parte essenziale di qualsiasi configurazione di un server. Anche se i vostri stessi servizi implementano funzioni di sicurezza o sono limitati alle interfacce sulle quali si desidera che questi vengano eseguiti, un firewall serve come ulteriore livello di protezione. <br>
+                                            Un firewall configurato correttamente limiterà l’accesso a tutto tranne che ai servizi specifici. Esporre solo pochi software riduce l’area di attacco del server. In generale, il setup del firewall dovrebbe richiedere solo pochi minuti e c’è bisogno di farlo solo durante la configurazione iniziale del server o quando si apportano modifiche a quei servizi. <br><br><br>
+                                        </p>
+                                    </p>
+                                    <li><h3>VPN e Private Networking</h3></li>
+                                    <p>
+                                        Le reti private (private networking) sono reti che sono disponibili solo per determinati server o utenti. Per esempio, su DigitalOcean, il private networking è disponibile in alcune regioni quale vasta rete di data center. Una VPN o rete privata virtuale è un modo per creare connessioni sicure tra computer remoti e per mostrare la connessione come se si trattasse di una rete privata locale. Ciò fornisce un modo per per connettersi ai server remoti su connessioni sicure.
+                                        <br>
+                                        L’utilizzo di reti private invece che di reti pubbliche per le comunicazioni interne è quasi sempre preferibile quando si può scegliere tra le due. L’utilizzo di una VPN è, di fatto, un modo per mappare una rete privata che può essere vista solo dai vostri server. La comunicazione sarà completamente privata e sicura. Le altre applicazioni possono essere configurate per far passare il proprio traffico attraverso l’interfaccia virtuale che il software VPN espone. 
+                                        <br>
+                                        L’utilizzo delle reti private in un datacenter che ha questa capacità è semplice quanto abilitare l’interfaccia durante la creazione del server e la configurazione delle applicazioni e del firewall per poter utilizzare la rete privata.
+                                        <br>
+                                        Per quanto riguarda le VPN, la configurazione iniziale è un po’ più complessa, ma la maggiore sicurezza è utile per la maggior parte dei casi d’uso. Dopo che la VPN è operativa, le applicazioni devono essere configurate per utilizzare il tunnel VPN. Per imparare a fare il setup di una VPN per collegare in modo sicuro la vostra infrastruttura, date un’occhiata al tutorial di OpenVPN.
+                                        <br>
+                                    </p>
+                                    <li><h3>Infrastruttura a chiave pubblica e crittografia SSL/TLS</h3></li>
+                                    <p>
+                                        Per infrastruttura a chiave pubblica, o PKI (Public Key Infrastructure), ci si riferisce ad un sistema che è stato progettato per creare, gestire e convalidare i certificati al fine di identificare gli individui e cifrare le comunicazioni. I certificati SSL o TLS possono essere utilizzati per autenticare entità diverse tra loro. Dopo l’autenticazione, possono essere utilizzati anche per la comunicazione cifrata che è stata avviata.  <br>
+                                        Stabilire una autorità di certificazione e di gestione dei certificati per i server permette ad ogni entità all’interno dell’infrastruttura di convalidare l’identità di altri membri e di cifrare il loro traffico. 
+                                        Ogni server può essere configurato per fidarsi di un’autorità di certificazione centralizzata. In seguito, a qualsiasi certificato firmato da un’autorità può essere implicitamente data fiducia (trusted). Se le applicazioni ed i protocolli che si usano per comunicare supportano la crittografia TLS/SSL, questo è un modo per crittografare il sistema senza il sovraccarico dato da un tunnel VPN (che internamente utilizza spesso il protocollo SSL).
+                                        <br>
+                                        La configurazione di un’autorità di certificazione e il setup del resto della infrastruttura a chiave pubblica può comportare un po’ di sforzo iniziale. Per molti utenti, l’implementazione di una infrastruttura a chiave pubblica vera e propria avrà più senso al crescere delle proprie esigenze infrastrutturali. La protezione delle comunicazioni in una PKI vale i costi di gestione aggiuntivi. <br>
+                                    </p>
+                                    <li><h3>Infrastruttura a chiave pubblica e crittografia SSL/TLS</h3></li>
+                                    <p>
+                                        Un sistema di rilevamento delle intrusioni, o IDS (Intrusion Detection System), è un software che controlla le attività non autorizzate di un sistema o di una rete. Molte implementazioni di IDS basate su host utilizzano l’audit dei file come metodo per verificare se il sistema è cambiato.
+                                        <br>
+                                        Queste strategie sono alcune delle poche maniere per essere assolutamente sicuri che il vostro filesystem non sia stato alterato da qualche utente o processo. Per molte ragioni, gli intrusi spesso desiderano rimanere nascosti in modo da poter continuare ad utilizzare il server per un periodo prolungato di tempo. Potrebbero sostituire i binari con delle versioni compromesse. Fare una verifica del filesystem vi dirà se uno qualsiasi dei file è stato alterato, consentendo di essere certi dell’integrità del vostro ambiente server.
+                                        <br>
+                                        L’implementazione di un IDS o effettuare l’audit di file possono essere processi piuttosto intensi. 
+                                        Rende inoltre più complicate le operazioni quotidiane. Si complicano le procedure di aggiornamento visto che dovrete ricontrollare il sistema prima di eseguire gli aggiornamenti e quindi ricreare i parametri di riferimento dopo aver eseguito l’aggiornamento, in modo da potersi accorgere delle modifiche fatte al software. 
+                                        Essere in grado di controllare il sistema partendo da un copia nota e precisa è uno dei pochi modi per garantire che i file non siano stati modificati a vostra insaputa. Alcuni popolari sistemi di audit di file e IDS sono Tripwire e Aide.
+                                        <br>
+                                    </p>
+                                    <li><h3>Ambienti di esecuzione isolati</h3></li>
+                                    <p>
+                                        L’isolamento degli ambienti di esecuzione si riferisce a qualsiasi metodo in cui i singoli componenti vengono eseguiti all’interno di uno spazio dedicato proprio.
+                                        Il livello di isolamento dipende in larga misura dai requisiti della vostra applicazione e dalle realtà della vostra infrastruttura.
+                                        <br>
+                                        Isolare i processi in ambienti di esecuzione individuali aumenta la capacità di isolare eventuali problemi di sicurezza che possono sorgere. In modo simile a come le paratie e gli scomparti possono aiutare a contenere le brecce nella carena delle navi, separare ciascun componente può limitare l’accesso che un intruso ha su altre parti della vostra infrastruttura.
+                                        <br>
+                                        A seconda del tipo di contenimento scelto, isolare le applicazioni può essere relativamente semplice. Tramite l’impacchettamento dei singoli componenti in contenitori è possibile ottenere rapidamente un certo grado di isolamento. <br>
+                                    </p>
+                                    <li><h3>Conclusioni</h3></li>
+                                    <p>
+                                        Le strategie di cui sopra sono solo alcuni dei miglioramenti che si possono fare per migliorare la sicurezza dei sistemi. È importante riconoscere che, meglio tardi che mai, le misure di sicurezza diminuiscono nella loro efficacia tanto più si è aspettato nel metterle in atto. La sicurezza non può essere un ripensamento e deve essere attuata fin dall’inizio a fianco dei servizi e delle applicazioni che si stanno fornendo.
+                                        <br>
+                                    </p>
+                                </ul>
+                            </header>
+                    
+
+					
+                        <!-- Footer -->
+                        <footer>
+                            <div class="pagination">
+                                <a href="sicurezza informatiche.html" class="previous">Prev</a>
+                                <a href="sicurezza informatiche.html" class="page ">1</a>
+                                <a href="sicurezza informatiche2.html" class="page active">2</a>
+                            </div>
+                        </footer>
+                    </div>
+
+	<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="3"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" /></li>
+					</ul>
+				</form>
+			</section>
+			<section class="split contact">
+				<section class="alt">
+					<h3>Address</h3>
+					<p>Via Aldo Moro, 4 - 81016
+						<br />
+						Piedimonte Matese</p>
+				</section>
+				<section>
+					<h3>Phone</h3>
+					<p><a href="#">0823 1876574
+					</a></p>
+				</section>
+				<section>
+					<h3>Email</h3>
+					<p><a href="#">ceps040003@istruzione.it</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/liceomusicale.piedimontematese" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://instagram.com/liceo_galileipiedimontematese?igshid=YmMyMTA2M2Y=" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
